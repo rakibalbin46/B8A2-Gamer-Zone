@@ -129,7 +129,7 @@ li a {
 
 /* Games card styles */
 .card-section {
- margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .games-card-title {
   color: #0b0223;
@@ -169,6 +169,50 @@ li a {
   color: #534c64;
   font-size: 1rem;
   font-weight: 300;
+}
+/* Play Instantly Section */
+.play-instantly-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.play-instantly-container {
+  margin-top: -100px;
+}
+.play-instantly-img-container img {
+  width: 500px;
+  height: 500px;
+}
+
+.play-instantly-title {
+  text-align: right;
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding-right: 30px;
+}
+#play {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play-instantly-description {
+  color: #534c64;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+.mini-cartoon img {
+  width: 180px;
+  height: 200px;
+  margin-top: -180px;
+  margin-left: -70px;
 }
 
 /*.......... Responsive Styles................ */
@@ -226,7 +270,6 @@ li a {
     flex-direction: column;
   }
   .games-card-title {
-   
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
@@ -235,17 +278,42 @@ li a {
   .games-card-description {
     text-align: center;
     color: #534c64;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 300;
   }
   .card-description {
     text-align: left;
     color: #534c64;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin-bottom: 10px;
   }
- 
+  .play-instantly-section {
+    flex-direction: column;
+  }
+  .play-instantly-container {
+    margin-top: 0px;
+  }
+  .play-instantly-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .play-instantly-img-container img {
+    width: 300px;
+    height: auto;
+    
+  }
+  .play-instantly-img-container {
+    margin-left: 140px;
+    margin-right: 100px;
+  }
+  .mini-cartoon img {
+    width: 100px;
+    height: 130px;
+    margin-top: -150px;
+    margin-left: -50px;;
+    
+  }
 }
 
 /* Medium devices or Tablets Styles */
@@ -274,5 +342,16 @@ li a {
   }
   .cards-img-description {
     margin-bottom: 10px;
+  }
+  .play-instantly-section {
+    flex-direction: column;
+  }
+  .play-instantly-container {
+    margin-top: 0px;
+  }
+  .play-instantly-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
   }
 }
