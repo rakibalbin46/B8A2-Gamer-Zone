@@ -127,6 +127,50 @@ li a {
   height: 400px;
 }
 
+/* Games card styles */
+.card-section {
+ margin-bottom: 50px;
+}
+.games-card-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.funny-videos {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.games-card-description {
+  text-align: center;
+  color: #534c64;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.cards-img-container {
+  display: flex;
+  gap: 10px;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.cards-img-container img {
+  width: 250px;
+  height: 300px;
+}
+.card-description {
+  text-align: center;
+  color: #534c64;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 /*.......... Responsive Styles................ */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
@@ -169,7 +213,7 @@ li a {
   }
   .goat-description {
     margin-top: 20px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .btn-primary {
     margin-right: 10px;
@@ -177,6 +221,31 @@ li a {
   .goat-img-container img {
     width: 100%;
   }
+  /* Cards Section styles */
+  .cards-img-container {
+    flex-direction: column;
+  }
+  .games-card-title {
+   
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 30px;
+  }
+  .games-card-description {
+    text-align: center;
+    color: #534c64;
+    font-size: .8rem;
+    font-weight: 300;
+  }
+  .card-description {
+    text-align: left;
+    color: #534c64;
+    font-size: .8rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+ 
 }
 
 /* Medium devices or Tablets Styles */
@@ -197,6 +266,13 @@ li a {
   }
   .goat-section {
     flex-direction: column;
-    
+  }
+  .cards-img-container {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .cards-img-description {
+    margin-bottom: 10px;
   }
 }
